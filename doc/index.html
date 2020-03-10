@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Patrick - vCard / Resume / CV Template</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="assets/style.css">
+	<link rel="stylesheet" href="assets/table.css">
+</head>
+<body>
+	<header class="dt-header dt-header_blue">
+		<span class="dt-logo">Patrick - vCard / Resume / CV Template</span>
+	</header>	
+	<div class="dt-container dt-container_flex">
+		<aside class="dt-navbar">
+			<nav class="dt-navbar__nav">
+				<div class="dt-navbar__section">
+					<ul class="dt-navbar__list">
+						<li><a href="#files_structure" class="dt-navbar__link">File structure</a></li>
+						<li><a href="#settings" class="dt-navbar__link">Settings</a></li>
+						<li><a href="#include_colors" class="dt-navbar__link">Color Schemes</a></li>
+						<li><a href="#include_rtl" class="dt-navbar__link">RTL Version</a></li>
+						<li><a href="#include_fonts" class="dt-navbar__link">Fonts</a></li>
+						<li><a href="#conts" class="dt-navbar__link">Contact Form PHP</a></li>
+						<li>
+							<a href="#html_structure" class="dt-navbar__link">HTML structure</a>
+							<ul class="dt-navbar__list">
+								<li><a href="#html_structure_home" class="dt-navbar__link dt-navbar__link_nested">"Started" section</a></li>
+								<li><a href="#html_structure_about" class="dt-navbar__link dt-navbar__link_nested">"About" section</a></li>
+								<li><a href="#html_structure_resume" class="dt-navbar__link dt-navbar__link_nested">"Resume" section</a></li>
+								<li><a href="#html_structure_portfolio" class="dt-navbar__link dt-navbar__link_nested">"Portfolio" section</a></li>
+								<li><a href="#html_structure_blog" class="dt-navbar__link dt-navbar__link_nested">"Blog" section</a></li>
+								<li><a href="#html_structure_contacts" class="dt-navbar__link dt-navbar__link_nested">"Contacts" section</a></li>
+							</ul>
+						</li>
+						<li><a href="#icons" class="dt-navbar__link">Icons</a></li>
+						<li><a href="#credits" class="dt-navbar__link">Credits</a></li>
+					</ul>
+				</div>		
+			</nav>
+		</aside>	
+		<div class="dt-content dt-content_scroll-bar-yes">
+			<div class="dt-section">
+				<h2 class="dt-title">Patrick - vCard / Resume / CV Template</h2>
+				<p>By:Olexandr Beshley</p>
+				<p>Thank you for your purchase. If you have any questions, mail me to - <a href="mailto:beshleygame@mail.ru">beshleygame@mail.ru</a></p>
+			</div>		
+			<article id="files_structure" class="dt-section">
+				<h2 class="dt-title">File structure</h2>
+				<p>After unpacking archive, you'll see this structure:</p>
+				<div class="dt-info-block">
+					<pre class="code language-html">
+						<code>
+main/
+│ 
+├──doc/
+├──template/	
+│──│──css/
+│──│──│──animate.css
+│──│──│──basic.css
+│──│──│──layout.css
+│──│──│──blogs.css
+│──│──│──line-awesome.css
+│──│──│──magnific-popup.css
+│──│──│──simplebar.css
+│──│──│──rtl.css
+│──│──│──theme-colors/
+│──│──fonts/
+│──│──images/
+│──│──js/
+│──│──│──scripts.js
+│──│──│──imagesloaded.pkgd.js
+│──│──│──jquery.min.js
+│──│──│──jquery.validate.js
+│──│──│──magnific-popup.js
+│──│──│──masonry.pkgd.js
+│──│──│──masonry-filter.js
+│──│──│──jquery.mb.YTPlayer.js
+│──│──│──simplebar.js
+│──│──│──typed.js
+│──│──│──particles.js
+│──│──│──particles-setting.js
+│──│──less/
+│──│──│──basic.less
+│──│──│──layout.less
+│──│──│──blogs.less
+│──│──│──setting.less
+│──│──│──theme-colors/
+│──│──mailer/
+│──│──│──feedback.php
+│──│──│──form_setting.php
+│──│──index.html
+│──│──index-rtl.html
+│──│──index-bgcolor.html
+│──│──index-bgcolor-rtl.html
+│──│──index-particles.html
+│──│──index-particles-rtl.html
+│──│──index-video.html
+│──│──index-video-rtl.html
+│──│──blog-post.html
+│──│──blog-post-rtl.html
+						</code>
+					</pre>
+				</div>
+				<ul class="dt-list dt-list_nested dt-info-block">
+					<li>
+						<span class="dt-label dt-label_bold">css</span> - all CSS for pages
+						<ul class="dt-list dt-list_nested">
+							<li><span class="dt-label dt-label_bold">basic.css</span> - CSS for basic styles</li>
+							<li><span class="dt-label dt-label_bold">layout.css</span> - CSS for template layout</li>
+							<li><span class="dt-label dt-label_bold">blogs.css</span> - CSS for blog post</li>
+							<li><span class="dt-label dt-label_bold">rtl.css</span> - CSS for rtl support</li>
+                            <li><span class="dt-label dt-label_bold">theme-colors/</span> - CSS files for template colors</li>
+						</ul>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">less</span> - all LESS for pages
+						<ul class="dt-list dt-list_nested">
+							<li><span class="dt-label dt-label_bold">setting.less</span> - LESS for setting template</li>
+							<li><span class="dt-label dt-label_bold">basic.less</span> - LESS for basic styles</li>
+							<li><span class="dt-label dt-label_bold">layout.less</span> - LESS for template layout</li>
+                            <li><span class="dt-label dt-label_bold">blogs.less</span> - LESS for template Blog</li>
+						</ul>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">js</span> - all JS for pages
+						<ul class="dt-list dt-list_nested">
+							<li><span class="dt-label dt-label_bold">scripts.js</span> - Main JS for template</li>
+						</ul>
+					</li>
+				</ul>
+			</article>
+			<article id="settings" class="dt-section">
+				<h2 class="dt-title">Settings</h2>
+				<p>
+					For editing the template you can use following settings, folder "/less/setting.less" .
+					To change the color of the template, just add a line to the "head":
+					&lt;link rel="stylesheet" href="css/theme-colors/green.css" /&gt; - (green.css, blue.css, orange.css, red.css, purple.css, pink.css)
+				</p>
+
+				<table>
+					<thead>
+					<tr>
+						<th>Name</th>
+						<th>Value</th>
+						<th>Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td colspan="3"><span class="dt-label dt-label_bold">Colors setting for template elements</span></td>
+						</tr>
+						<tr>
+							<td>@bg</td>
+							<td>#242425</td>
+							<td>Bg color</td>
+						</tr>
+                        <tr>
+							<td>@bg2</td>
+							<td>#181818</td>
+							<td>Bg extra color</td>
+						</tr>
+                        <tr>
+							<td>@default-color</td>
+							<td>#a9a9a9</td>
+							<td>Default color</td>
+						</tr>
+						<tr>
+							<td>@extra-color</td>
+							<td>#777</td>
+							<td>Extra color</td>
+						</tr>
+						<tr>
+							<td>@dark-color</td>
+							<td>#181818</td>
+							<td>Dark color</td>
+						</tr>
+						<tr>
+							<td>@light-color</td>
+							<td>#c9c9c9</td>
+							<td>Light color</td>
+						</tr>
+						<tr>
+							<td>@white-color</td>
+							<td>#fff</td>
+							<td>White color</td>
+						</tr>
+						<tr>
+							<td>@active-color</td>
+							<td>#5ac24e</td>
+							<td>template color</td>
+						</tr>
+						<tr>
+							<td>@error-color</td>
+							<td>red</td>
+							<td>Error field color</td>
+						</tr>
+						<tr>
+							<td colspan="3"><span class="dt-label dt-label_bold">Fonts setting for template</span></td>
+						</tr>
+						<tr>
+							<td>@default-font</td>
+							<td>'Poppins'</td>
+							<td>Default font for template</td>
+						</tr>
+						<tr>
+							<td>@logo-font</td>
+							<td>'Cormorant Garamond'</td>
+							<td>Logo font for template</td>
+						</tr>
+						<tr>
+							<td colspan="3"><span class="dt-label dt-label_bold">Sizes setting for template</span></td>
+						</tr>
+						<tr>
+							<td>@large-size</td>
+							<td>20px</td>
+							<td>Large Size</td>
+						</tr>
+						<tr>
+							<td>@default-size</td>
+							<td>16px</td>
+							<td>Default Size</td>
+						</tr>
+						<tr>
+							<td>@small-size</td>
+							<td>14px</td>
+							<td>Small Size</td>
+						</tr>
+						<tr>
+							<td>@extra-small-size</td>
+							<td>12px</td>
+							<td>Extra Small Size</td>
+						</tr>
+                        <tr>
+							<td>@extra2-small-size</td>
+							<td>11px</td>
+							<td>Extra Small Size</td>
+						</tr>
+						<tr>
+							<td>@title-size</td>
+							<td>66px</td>
+							<td>Title Size</td>
+						</tr>
+						<tr>
+							<td>@subtitle-size</td>
+							<td>20px</td>
+							<td>Subtitle Size</td>
+						</tr>
+						<tr>
+							<td>@h1-size</td>
+							<td>26px</td>
+							<td>H1 Size</td>
+						</tr>
+						<tr>
+							<td>@h2-size</td>
+							<td>24px</td>
+							<td>H2 Size</td>
+						</tr>
+						<tr>
+							<td>@h3-size</td>
+							<td>22px</td>
+							<td>H3 Size</td>
+						</tr>
+						<tr>
+							<td>@h4-size</td>
+							<td>20px</td>
+							<td>H4 Size</td>
+						</tr>
+						<tr>
+							<td>@h5-size</td>
+							<td>18px</td>
+							<td>H5 Size</td>
+						</tr>
+						<tr>
+							<td>@h6-size</td>
+							<td>16px</td>
+							<td>H6 Size</td>
+						</tr>
+						<tr>
+							<td>@large-icon-size</td>
+							<td>50px</td>
+							<td>Large icons size</td>
+						</tr>
+						<tr>
+							<td>@default-icon-size</td>
+							<td>40px</td>
+							<td>Default icons size</td>
+						</tr>
+						<tr>
+							<td>@default-letter-spacing</td>
+							<td>0em</td>
+							<td>Default Letter Spacing</td>
+						</tr>
+						<tr>
+							<td>@extra-letter-spacing</td>
+							<td>0.04em</td>
+							<td>Extra Letter Spacing</td>
+						</tr>
+						<tr>
+							<td>@line-height</td>
+							<td>1.7</td>
+							<td>Default Line-height for text</td>
+						</tr>
+					</tbody>
+				</table>				
+			</article>
+			<article id="include_colors" class="dt-section">
+				<h2 class="dt-title">Colors Schemes</h2>
+				<p>Just add "green.css (or blue.css, orange.css, red.css, pink.css, purple.css)" at the end of the tag &lt;head&gt;, on .html file:</p>
+				<pre class="code language-html">
+					<code>
+&lt;link rel="stylesheet" href="css/theme-colors/green.css" /&gt;
+&lt;link rel="stylesheet" href="css/theme-colors/blue.css" /&gt;
+&lt;link rel="stylesheet" href="css/theme-colors/orange.css" /&gt;
+&lt;link rel="stylesheet" href="css/theme-colors/pink.css" /&gt;
+&lt;link rel="stylesheet" href="css/theme-colors/purple.css" /&gt;
+&lt;link rel="stylesheet" href="css/theme-colors/red.css" /&gt;
+					</code>
+				</pre>
+			</article>
+            <article id="include_rtl" class="dt-section">
+				<h2 class="dt-title">RTL Version</h2>
+				<p>Just add "rtl.css" at the end of the tag &lt;head&gt;, on .html file:</p>
+				<pre class="code language-html">
+					<code>
+&lt;link rel="stylesheet" href="css/rtl.css" /&gt;
+					</code>
+				</pre>				
+			</article>
+			<article id="include_fonts" class="dt-section">
+				<h2 class="dt-title">Include of fonts</h2>
+				<p>To use fonts, you must add one tag 'link' from section below to head section.</p>
+				<pre class="code language-html">
+					<code>
+&lt;link href="https://fonts.googleapis.com/cssfamily=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"&gt;
+					</code>
+				</pre>	
+				<p>
+					Next step is to set the @default-font option with using settings table.
+				</p>				
+			</article>
+			<article id="conts" class="dt-section">
+				<h2 class="dt-title">Contact Form PHP</h2>
+				<p>To modify the form is submitted, you can use the following settings, folders "/mailer/form_setting.php" and "/mailer/feedback.php"</p>				
+			</article>
+			<article id="html_structure" class="dt-section">
+				<h2 class="dt-title">HTML structure</h2>
+				<pre class="code language-html">
+					<code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	
+	&lt;!--
+		Basic
+	--&gt;
+	&lt;meta charset="UTF-8" /&gt;
+	&lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt; 
+	&lt;title&gt;Patrick - vCard / Resume / CV Template&lt;/title&gt;
+	&lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /&gt;
+	&lt;meta name="description" content="vCard & Resume Template" /&gt;
+	&lt;meta name="keywords" content="vcard, resposnive, resume, personal, card, cv, cards, portfolio" /&gt;
+	&lt;meta name="author" content="beshleyua" /&gt;
+	
+	&lt;!--
+		Load Fonts
+	--&gt;
+	&lt;link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"&gt;
+	&lt;link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet"&gt;
+    &lt;link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=cyrillic" rel="stylesheet"&gt;
+    
+	&lt;!--
+		Load CSS
+	--&gt;
+	&lt;link rel="stylesheet" href="css/basic.css" /&gt;
+	&lt;link rel="stylesheet" href="css/layout.css" /&gt;
+	&lt;link rel="stylesheet" href="css/blogs.css" /&gt;
+    &lt;link rel="stylesheet" href="css/line-awesome.css" /&gt;
+	&lt;link rel="stylesheet" href="css/magnific-popup.css" /&gt;
+	&lt;link rel="stylesheet" href="css/animate.css" /&gt;
+    &lt;link rel="stylesheet" href="css/simplebar.css" /&gt;
+    
+    &lt;!-- theme colors --&gt;
+    &lt;link rel="stylesheet" href="css/theme-colors/green.css" /&gt;
+    &lt;!--&lt;link rel="stylesheet" href="css/theme-colors/blue.css" /&gt;--&gt;
+    &lt;!--&lt;link rel="stylesheet" href="css/theme-colors/red.css" /&gt;--&gt;
+    &lt;!--&lt;link rel="stylesheet" href="css/theme-colors/orange.css" /&gt;--&gt;
+    &lt;!--&lt;link rel="stylesheet" href="css/theme-colors/pink.css" /&gt;--&gt;
+    &lt;!--&lt;link rel="stylesheet" href="css/theme-colors/purple.css" /&gt;--&gt;
+	
+	&lt;!--[if lt IE 9]&gt;
+	&lt;script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"&gt;&lt;/script&gt;
+	&lt;script src="http://html5shim.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+	
+	&lt;!--
+		Favicons
+	--&gt;
+	&lt;link rel="shortcut icon" href="images/favicons/favicon.ico"&gt;
+	
+&lt;/head&gt;
+
+&lt;body&gt;
+	&lt;div class="page"&gt;
+		
+		&lt;!--
+            Preloader
+        --&gt;
+		&lt;div class="preloader"&gt;
+			&lt;div class="centrize full-width"&gt;
+				&lt;div class="vertical-center"&gt;
+					&lt;div class="spinner"&gt;
+						&lt;div class="double-bounce1"&gt;&lt;/div&gt;
+						&lt;div class="double-bounce2"&gt;&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+        
+        &lt;!--
+            Header
+        --&gt;
+        &lt;header class="header"&gt;
+
+            &lt;!-- logo --&gt;
+            &lt;div class="logo"&gt;
+                &lt;a href="#"&gt;&lt;span&gt;P&lt;/span&gt;&lt;/a&gt;
+            &lt;/div&gt;
+
+            &lt;!-- menu --&gt;
+            &lt;div class="top-menu"&gt;
+                &lt;ul&gt;
+                    &lt;li class="active"&gt;
+                        &lt;a href="#home-card"&gt;
+                            &lt;span class="icon la la-home"&gt;&lt;/span&gt;
+                            &lt;span class="link"&gt;Home&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href="#about-card"&gt;
+                            &lt;span class="icon la la-user"&gt;&lt;/span&gt;
+                            &lt;span class="link"&gt;About&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href="#resume-card"&gt;
+                            &lt;span class="icon la la-gear"&gt;&lt;/span&gt;
+                            &lt;span class="link"&gt;Resume&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href="#works-card"&gt;
+                            &lt;span class="icon la la-eye"&gt;&lt;/span&gt;
+                            &lt;span class="link"&gt;Portfolio&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href="#blog-card"&gt;
+                            &lt;span class="icon la la-newspaper-o"&gt;&lt;/span&gt;
+                            &lt;span class="link"&gt;Blog&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href="#contacts-card"&gt;
+                            &lt;span class="icon la la-envelope"&gt;&lt;/span&gt;
+                            &lt;span class="link"&gt;Contacts&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Started socials --&gt;
+            &lt;div class="social"&gt;
+                &lt;a target="_blank" href="https://dribbble.com/"&gt;&lt;span class="icon la la-dribbble"&gt;&lt;/span&gt;&lt;/a&gt;
+                &lt;a target="_blank" href="https://facebook.com/"&gt;&lt;span class="icon la la-facebook"&gt;&lt;/span&gt;&lt;/a&gt;
+                &lt;a target="_blank" href="https://github.com/"&gt;&lt;span class="icon la la-github"&gt;&lt;/span&gt;&lt;/a&gt;
+                &lt;a target="_blank" href="https://stackoverflow.com/"&gt;&lt;span class="icon la la-stack-overflow"&gt;&lt;/span&gt;&lt;/a&gt;
+            &lt;/div&gt;
+
+        &lt;/header&gt;
+
+		&lt;!--
+			Container
+		--&gt;
+		&lt;div class="container"&gt;
+
+			&lt;!--
+				Card - Started
+			--&gt;
+			&lt;div class="card-inner card-started active" id="home-card"&gt;
+
+				&lt;!-- Started Background --&gt;
+                &lt;div class="slide" style="background-image: url(images/bg.jpg);"&gt;&lt;/div&gt;
+                
+				&lt;div class="centrize full-width"&gt;
+                    &lt;div class="vertical-center"&gt;
+
+                        &lt;!-- Started titles --&gt;
+                        &lt;div class="title"&gt;&lt;span&gt;Patrick&lt;/span&gt; Johansson&lt;/div&gt;
+                        &lt;div class="subtitle"&gt;
+                            I am 
+                            &lt;div class="typing-title"&gt;
+								&lt;p&gt;a &lt;strong&gt;web developer.&lt;/strong&gt;&lt;/p&gt;
+								&lt;p&gt;a &lt;strong&gt;blogger.&lt;/strong&gt;&lt;/p&gt;
+								&lt;p&gt;a &lt;strong&gt;freelancer.&lt;/strong&gt;&lt;/p&gt;
+                                &lt;p&gt;a &lt;strong&gt;photographer.&lt;/strong&gt;&lt;/p&gt;
+							&lt;/div&gt;
+							&lt;span class="typed-title"&gt;&lt;/span&gt;
+                        &lt;/div&gt;
+                        
+                    &lt;/div&gt;
+				&lt;/div&gt;
+
+			&lt;/div&gt;
+
+			&lt;!-- 
+				Card - About
+			--&gt;
+			&lt;div class="card-inner" id="about-card"&gt;
+                &lt;div class="row card-container"&gt;
+
+                    ...
+                    
+                &lt;/div&gt;
+			&lt;/div&gt;
+            
+            &lt;!-- 
+				Card - Resume
+			--&gt;
+			&lt;div class="card-inner" id="resume-card"&gt;
+                &lt;div class="row card-container"&gt;
+                        
+                    ...
+                    
+                &lt;/div&gt;
+			&lt;/div&gt;
+            
+            &lt;!-- 
+				Card - Works
+			--&gt;
+			&lt;div class="card-inner" id="works-card"&gt;
+                &lt;div class="row card-container"&gt;
+                    
+                    ...
+                    
+                &lt;/div&gt;
+			&lt;/div&gt;
+            
+            &lt;!-- 
+				Card - Blog
+			--&gt;
+			&lt;div class="card-inner" id="blog-card"&gt;
+                &lt;div class="row card-container"&gt;
+                        
+                    ...
+                        
+                &lt;/div&gt;
+			&lt;/div&gt;
+            
+            &lt;!-- 
+				Card - Contacts
+			--&gt;
+			&lt;div class="card-inner" id="contacts-card"&gt;
+                &lt;div class="row card-container"&gt;
+                    
+                    ...
+                    
+                &lt;/div&gt;
+			&lt;/div&gt;
+            
+            &lt;!-- 
+                Lines Grid
+            --&gt;
+            &lt;div class="lines-grid"&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col col-m-12 col-t-6 col-d-4 col-d-lg-3"&gt;&lt;/div&gt;
+                    &lt;div class="col col-m-12 col-t-6 col-d-4 col-d-lg-3"&gt;
+                        &lt;div class="lines"&gt;
+                            &lt;div class="line-1"&gt;&lt;/div&gt;
+                            &lt;div class="line-2" style="animation-delay: 10s;"&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col col-m-12 col-t-6 col-d-4 col-d-lg-3"&gt;
+                        &lt;div class="lines"&gt;
+                            &lt;div class="line-1"&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col col-m-0 col-t-0 col-d-0 col-d-lg-3"&gt;
+                        &lt;div class="lines"&gt;
+                            &lt;div class="line-1"&gt;&lt;/div&gt;
+                            &lt;div class="line-2" style="animation-delay: 0s;"&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+	
+	&lt;!--
+		jQuery Scripts
+	--&gt;
+	&lt;script src="js/jquery.min.js"&gt;&lt;/script&gt;
+	&lt;script src="js/jquery.validate.js"&gt;&lt;/script&gt;
+	&lt;script src="js/jquery.magnific-popup.js"&gt;&lt;/script&gt;
+	&lt;script src="js/imagesloaded.pkgd.js"&gt;&lt;/script&gt;
+	&lt;script src="js/masonry.pkgd.js"&gt;&lt;/script&gt;
+	&lt;script src="js/masonry-filter.js"&gt;&lt;/script&gt;
+	&lt;script src="js/simplebar.js"&gt;&lt;/script&gt;
+    &lt;script src="js/typed.js"&gt;&lt;/script&gt;
+	
+	&lt;!--
+		Google map api
+	--&gt;
+	&lt;script src="https://maps.google.com/maps/api/js?sensor=false"&gt;&lt;/script&gt;
+	
+	&lt;!--
+		Main Scripts
+	--&gt;
+	&lt;script src="js/scripts.js"&gt;&lt;/script&gt;
+	
+&lt;/body&gt;
+&lt;/html&gt;
+					</code>
+				</pre>				
+			</article>
+			<article id="html_structure_about" class="dt-section">
+				<h2 class="dt-title">HTML structure of "About" section</h2>
+				<pre class="code language-html">
+					<code>
+&lt;!-- 
+    Card - About
+--&gt;
+&lt;div class="card-inner" id="about-card"&gt;
+    &lt;div class="row card-container"&gt;
+
+        &lt;!--
+            Card Wrap
+        --&gt;
+        &lt;div class="card-wrap col col-m-12 col-t-12 col-d-8 col-d-lg-6" data-simplebar&gt;
+
+            &lt;!-- About Image --&gt;
+            &lt;div class="card-image col col-m-12 col-t-12 col-d-4 col-d-lg-6" style="background-image: url(images/profile.jpg);"&gt;&lt;/div&gt;
+
+            &lt;!--
+                Inner Top
+            --&gt;
+            &lt;div class="content inner-top"&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col col-m-12 col-t-12 col-d-12 col-d-lg-12"&gt;
+                        &lt;div class="title-bg"&gt;About Me&lt;/div&gt;
+                        &lt;div class="text"&gt;
+                            &lt;p&gt;
+                                &lt;strong&gt;Hello, I’m a Patrick&lt;/strong&gt;, web-developer based on Paris. &lt;br /&gt;
+                                I have rich experience in web site design & building &lt;br /&gt;
+                                and customization. Also I am good at &lt;strong&gt;html, css, &lt;br /&gt;
+                                wordpress, php, jquery, bootstrap.&lt;/strong&gt;
+                            &lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class="circle-bts"&gt;
+                            &lt;a href="#"&gt;&lt;span&gt;&lt;i class="icon la la-download"&gt;&lt;/i&gt;Download CV&lt;/span&gt;&lt;/a&gt;
+                            &lt;a href="#"&gt;&lt;i class="icon la la-github"&gt;&lt;/i&gt;&lt;/a&gt;
+                            &lt;a href="#"&gt;&lt;i class="icon la la-stack-overflow"&gt;&lt;/i&gt;&lt;/a&gt;
+                            &lt;a href="#"&gt;&lt;i class="icon la la-skype"&gt;&lt;/i&gt;&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!--
+                Services
+            --&gt;
+            &lt;div class="content services"&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col col-m-12 col-t-12 col-d-12 col-d-lg-12"&gt;
+
+                        &lt;!-- title --&gt;
+                        &lt;div class="title"&gt;&lt;span&gt;Our&lt;/span&gt; Services&lt;/div&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;!-- service items --&gt;
+                &lt;div class="row service-items"&gt;
+
+                    &lt;!-- service item --&gt;
+                    &lt;div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6"&gt;
+                        &lt;div class="service-item card-box"&gt;
+                            &lt;div class="icon"&gt;&lt;i class="la la-html5"&gt;&lt;/i&gt;&lt;/div&gt;
+                            &lt;div class="name"&gt;Web Development&lt;/div&gt;
+                            &lt;p&gt;
+                                Modern and mobile-ready website that will help of your marketing.
+                            &lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    ...
+
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+            &lt;!--
+                Price Tables
+            --&gt;
+            &lt;div class="content pricing"&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col col-m-12 col-t-12 col-d-12 col-d-lg-12"&gt;
+
+                        &lt;!-- title --&gt;
+                        &lt;div class="title"&gt;&lt;span&gt;Pricing&lt;/span&gt; Tables&lt;/div&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;!-- pricing items --&gt;
+                &lt;div class="row pricing-items"&gt;
+
+                    &lt;!-- pricing item --&gt;
+                    &lt;div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6"&gt;
+                        &lt;div class="pricing-item card-box"&gt;
+                            &lt;div class="icon"&gt;&lt;i class="la la-tachometer"&gt;&lt;/i&gt;&lt;/div&gt;
+                            &lt;div class="name"&gt;Basic&lt;/div&gt;
+                            &lt;div class="amount"&gt;
+                                &lt;span class="dollar"&gt;$&lt;/span&gt;
+                                &lt;span class="number"&gt;22&lt;/span&gt;
+                                &lt;span class="period"&gt;hour&lt;/span&gt;
+                            &lt;/div&gt;
+                            &lt;div class="feature-list"&gt;
+                                &lt;ul&gt;
+                                    &lt;li&gt;Web Development&lt;/li&gt;
+                                    &lt;li&gt;Advetising&lt;/li&gt;
+                                    &lt;li&gt;Game Development&lt;/li&gt;
+                                    &lt;li class="disable"&gt;Music Writing&lt;/li&gt;
+                                    &lt;li class="disable"&gt;Photography &lt;strong&gt;new&lt;/strong&gt;&lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/div&gt;
+                            &lt;div class="lnks"&gt;
+                                &lt;a href="#" class="lnk"&gt;Buy &lt;span&gt;Basic&lt;/span&gt;&lt;/a&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    ...
+
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+            &lt;!--
+                Fun Fact
+            --&gt;
+            &lt;div class="content fuct"&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col col-m-12 col-t-12 col-d-12 col-d-lg-12"&gt;
+
+                        &lt;!-- title --&gt;
+                        &lt;div class="title"&gt;&lt;span&gt;Fun&lt;/span&gt; Facts&lt;/div&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;!-- fuct items --&gt;
+                &lt;div class="row fuct-items"&gt;
+
+                    &lt;!-- fuct item --&gt;
+                    &lt;div class="col col-m-6 col-t-6 col-d-3 col-d-lg-3"&gt;
+                        &lt;div class="fuct-item card-box"&gt;
+                            &lt;div class="icon"&gt;&lt;i class="la la-headphones"&gt;&lt;/i&gt;&lt;/div&gt;
+                            &lt;div class="name"&gt;47 Albumes Listened&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    
+                    ...
+                    
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+            &lt;!--
+                Clients
+            --&gt;
+            &lt;div class="content clients"&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col col-m-12 col-t-12 col-d-12 col-d-lg-12"&gt;
+
+                        &lt;!-- title --&gt;
+                        &lt;div class="title"&gt;&lt;span&gt;Our&lt;/span&gt; Clients&lt;/div&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;!-- client items --&gt;
+                &lt;div class="row client-items"&gt;
+
+                    &lt;!-- client item --&gt;
+                    &lt;div class="col col-m-6 col-t-6 col-d-3 col-d-lg-3"&gt;
+                        &lt;div class="client-item card-box"&gt;
+                            &lt;div class="image"&gt;
+                                &lt;a target="_blank" href="https://www.google.com"&gt;
+                                    &lt;img src="images/clients/client_1.png" alt="" /&gt;
+                                &lt;/a&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    ...
+
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>				
+			</article>
+			<article id="html_structure_resume" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Resume" section</h2>
+				<pre class="code language-html">
+					<code>
+&lt;!-- 
+    Card - Resume
+--&gt;
+&lt;div class="card-inner" id="resume-card"&gt;
+    &lt;div class="row card-container"&gt;
+
+        &lt;!--
+            Card Wrap
+        --&gt;
+        &lt;div class="card-wrap col col-m-12 col-t-12 col-d-8 col-d-lg-6" data-simplebar&gt;
+
+            &lt;!-- Resume Image --&gt;
+            &lt;div class="card-image col col-m-12 col-t-12 col-d-4 col-d-lg-6" style="background-image: url(images/profile2.jpg);"&gt;&lt;/div&gt;
+
+            &lt;!--
+                Inner Top
+            --&gt;
+            &lt;div class="content inner-top"&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class=" col col-m-12 col-t-12 col-d-12 col-d-lg-12"&gt;
+                        &lt;div class="title-bg"&gt;Resume&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!--
+                Resume
+            --&gt;
+            &lt;div class="content resume"&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6"&gt;
+
+                        &lt;!-- title --&gt;
+                        &lt;div class="title"&gt;&lt;span&gt;My&lt;/span&gt; Experience&lt;/div&gt;
+
+                        &lt;!-- resume items --&gt;
+                        &lt;div class="resume-items card-box"&gt;
+
+                            &lt;!-- resume item --&gt;
+                            &lt;div class="resume-item"&gt;
+                                &lt;div class="name"&gt;Web Development&lt;/div&gt;
+                                &lt;div class="date"&gt;2013-Present &lt;span&gt;|&lt;/span&gt; Facebook Inc.&lt;/div&gt;
+                                &lt;p&gt;
+                                    Collaborate with creative and development teams on the execution of ideas.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+
+                            ...
+
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6"&gt;
+
+                        &lt;!-- title --&gt;
+                        &lt;div class="title"&gt;&lt;span&gt;My&lt;/span&gt; Education&lt;/div&gt;
+
+                        &lt;!-- resume items --&gt;
+                        &lt;div class="resume-items card-box"&gt;
+
+                            &lt;!-- resume item --&gt;
+                            &lt;div class="resume-item"&gt;
+                                &lt;div class="name"&gt;Art University&lt;/div&gt;
+                                &lt;div class="date"&gt;2006-2008 &lt;span&gt;|&lt;/span&gt; New York&lt;/div&gt;
+                                &lt;p&gt;
+                                    Bachelor's Degree in Computer Science ABC Technical Institute, Jefferson, Missouri
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+
+                            ...
+
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!--
+                Skills
+            --&gt;
+            &lt;div class="content skills"&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6"&gt;
+
+                        &lt;!-- title --&gt;
+                        &lt;div class="title"&gt;&lt;span&gt;Personal&lt;/span&gt; Skills&lt;/div&gt;
+
+                        &lt;!-- skills --&gt;
+                        &lt;div class="skills-list card-box"&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt; 
+                                    &lt;div class="name"&gt;Communication&lt;/div&gt;
+                                    &lt;div class="progress"&gt;
+                                        &lt;div class="percentage" style="width:90%;"&gt;&lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/li&gt;
+                                &lt;li&gt; 
+                                    &lt;div class="name"&gt;Team Work&lt;/div&gt;
+                                    &lt;div class="progress"&gt;
+                                        &lt;div class="percentage" style="width:65%;"&gt;&lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/li&gt;
+                                &lt;li&gt; 
+                                    &lt;div class="name"&gt;Leadership&lt;/div&gt;
+                                    &lt;div class="progress"&gt;
+                                        &lt;div class="percentage" style="width:75%;"&gt;&lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/li&gt;
+                                &lt;li&gt;
+                                    &lt;div class="name"&gt;Language&lt;/div&gt;
+                                    &lt;div class="progress"&gt;
+                                        &lt;div class="percentage" style="width:85%;"&gt;&lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+
+                    &lt;/div&gt;
+                    &lt;div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6"&gt;
+
+                        &lt;!-- title --&gt;
+                        &lt;div class="title"&gt;&lt;span&gt;Professional&lt;/span&gt; Skills&lt;/div&gt;
+
+                        &lt;!-- skills --&gt;
+                        &lt;div class="skills-list card-box"&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt; 
+                                    &lt;div class="name"&gt;WordPress&lt;/div&gt;
+                                    &lt;div class="progress"&gt;
+                                        &lt;div class="percentage" style="width:90%;"&gt;&lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/li&gt;
+                                &lt;li&gt; 
+                                    &lt;div class="name"&gt;PHP / MYSQL&lt;/div&gt;
+                                    &lt;div class="progress"&gt;
+                                        &lt;div class="percentage" style="width:65%;"&gt;&lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/li&gt;
+                                &lt;li&gt; 
+                                    &lt;div class="name"&gt;HTML / CSS / JS&lt;/div&gt;
+                                    &lt;div class="progress"&gt;
+                                        &lt;div class="percentage" style="width:95%;"&gt;&lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/li&gt;
+                                &lt;li&gt;
+                                    &lt;div class="name"&gt;Photoshop&lt;/div&gt;
+                                    &lt;div class="progress"&gt;
+                                        &lt;div class="percentage" style="width:85%;"&gt;&lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>							
+			</article>	
+			<article id="html_structure_portfolio" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Portfolio" section</h2>		
+				<pre class="code language-html">
+					<code>
+&lt;!-- 
+    Card - Works
+--&gt;
+&lt;div class="card-inner" id="works-card"&gt;
+    &lt;div class="row card-container"&gt;
+
+        &lt;!--
+            Card Wrap
+        --&gt;
+        &lt;div class="card-wrap col col-m-12 col-t-12 col-d-8 col-d-lg-6" data-simplebar&gt;
+
+            &lt;!-- Work Image --&gt;
+            &lt;div class="card-image col col-m-12 col-t-12 col-d-4 col-d-lg-6" style="background-image: url(images/profile3.jpg);"&gt;&lt;/div&gt;
+
+            &lt;!--
+                Inner Top
+            --&gt;
+            &lt;div class="content inner-top"&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col col-m-12 col-t-12 col-d-12 col-d-lg-12"&gt;
+                        &lt;div class="title-bg"&gt;Portfolio&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!--
+                Works
+            --&gt;
+            &lt;div class="content works"&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col col-m-12 col-t-5 col-d-5 col-d-lg-5"&gt;
+
+                        &lt;!-- title --&gt;
+                        &lt;div class="title"&gt;&lt;span&gt;My&lt;/span&gt; Portfolio&lt;/div&gt;
+
+                    &lt;/div&gt;
+                    &lt;div class="col col-m-12 col-t-7 col-d-7 col-d-lg-7"&gt;
+
+                        &lt;!-- filters --&gt;
+                        &lt;div class="filter-menu filter-button-group"&gt;
+                            &lt;div class="f_btn active"&gt;
+                                &lt;label&gt;&lt;input type="radio" name="fl_radio" value="grid-item" /&gt;All&lt;/label&gt;
+                            &lt;/div&gt;
+                            &lt;div class="f_btn"&gt;
+                                &lt;label&gt;&lt;input type="radio" name="fl_radio" value="photo" /&gt;Photo&lt;/label&gt;
+                            &lt;/div&gt;
+                            &lt;div class="f_btn"&gt;
+                                &lt;label&gt;&lt;input type="radio" name="fl_radio" value="video" /&gt;Video&lt;/label&gt;
+                            &lt;/div&gt;
+                            &lt;div class="f_btn"&gt;
+                                &lt;label&gt;&lt;input type="radio" name="fl_radio" value="music" /&gt;Music&lt;/label&gt;
+                            &lt;/div&gt;
+                            &lt;div class="f_btn"&gt;
+                                &lt;label&gt;&lt;input type="radio" name="fl_radio" value="design" /&gt;Design&lt;/label&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;!-- work items --&gt;
+                &lt;div class="row grid-items"&gt;
+
+                    &lt;!-- work item photo --&gt;
+                    &lt;div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6 grid-item photo"&gt;
+                        &lt;div class="box-item card-box"&gt;
+                            &lt;div class="image"&gt;
+                                &lt;a href="images/works/work1.jpg" class="has-popup-image"&gt;
+                                    &lt;img src="images/works/work1.jpg" alt="" /&gt;
+                                    &lt;span class="info"&gt;
+                                        &lt;span class="icon la la-camera-retro"&gt;&lt;/span&gt;
+                                    &lt;/span&gt;
+                                &lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;div class="desc"&gt;
+                                &lt;a href="images/works/work1.jpg" class="name has-popup-image"&gt;Motorcycle Helmet&lt;/a&gt;
+                                &lt;div class="category"&gt;Photo&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;!-- work item video --&gt;
+                    &lt;div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6 grid-item video"&gt;
+                        &lt;div class="box-item card-box"&gt;
+                            &lt;div class="image"&gt;
+                                &lt;a href="https://vimeo.com/97102654" class="has-popup-video"&gt;
+                                    &lt;img src="images/works/work2.jpg" alt="" /&gt;
+                                    &lt;span class="info"&gt;
+                                        &lt;span class="icon la la-video-camera"&gt;&lt;/span&gt;
+                                    &lt;/span&gt;
+                                &lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;div class="desc"&gt;
+                                &lt;a href="https://vimeo.com/97102654" class="name has-popup-video"&gt;Minimalism Shapes&lt;/a&gt;
+                                &lt;div class="category"&gt;Video&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;!-- work item music --&gt;
+                    &lt;div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6 grid-item music"&gt;
+                        &lt;div class="box-item card-box"&gt;
+                            &lt;div class="image"&gt;
+                                &lt;a href="https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&show_artwork=true" class="has-popup-music"&gt;
+                                    &lt;img src="images/works/work3.jpg" alt="" /&gt;
+                                    &lt;span class="info"&gt;
+                                        &lt;span class="icon la la-music"&gt;&lt;/span&gt;
+                                    &lt;/span&gt;
+                                &lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;div class="desc"&gt;
+                                &lt;a href="#" class="name has-popup"&gt;Staircase&lt;/a&gt;
+                                &lt;div class="category"&gt;Music&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;!-- work item design --&gt;
+                    &lt;div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6 grid-item design"&gt;
+                        &lt;div class="box-item card-box"&gt;
+                            &lt;div class="image"&gt;
+                                &lt;a href="#popup-1" class="has-popup-media"&gt;
+                                    &lt;img src="images/works/work4.jpg" alt="" /&gt;
+                                    &lt;span class="info"&gt;
+                                        &lt;span class="icon la la-image"&gt;&lt;/span&gt;
+                                    &lt;/span&gt;
+                                &lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;div class="desc"&gt;
+                                &lt;a href="#popup-1" class="name has-popup-media"&gt;Mobile Application&lt;/a&gt;
+                                &lt;div class="category"&gt;Design&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div id="popup-1" class="popup-box mfp-fade mfp-hide"&gt;
+                                &lt;div class="content"&gt;
+                                    &lt;div class="image"&gt;
+                                        &lt;img src="images/works/work4.jpg" alt=""&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="desc"&gt;
+                                        &lt;div class="post-box"&gt;
+                                            &lt;h1&gt;Mobile Application&lt;/h1&gt;						
+                                            &lt;div class="blog-detail"&gt;Design&lt;/div&gt;
+                                            &lt;div class="blog-content"&gt;
+                                                &lt;p&gt;
+                                                    So striking at of to welcomed resolved. Northward by described up household therefore 
+                                                    attention. Excellence decisively nay man yet impression for contrasted remarkably.
+                                                &lt;/p&gt;
+                                                &lt;p&gt;
+                                                    Forfeited you engrossed but gay sometimes explained. Another as studied it to evident. 
+                                                    Merry sense given he be arise. Conduct at an replied removal an amongst. Remaining 
+                                                    determine few her two cordially admitting old.
+                                                &lt;/p&gt;
+                                                &lt;blockquote&gt;
+                                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia 
+                                                    Curae; Pellentesque suscipit.
+                                                &lt;/blockquote&gt;
+                                                &lt;p&gt;
+                                                    Tiled say decay spoil now walls meant house. My mr interest thoughts screened of outweigh 
+                                                    removing. Evening society musical besides inhabit ye my. Lose hill well up will he over on. 
+                                                    Increasing sufficient everything men him admiration unpleasing sex.
+                                                &lt;/p&gt;
+                                                &lt;ul class="list-style"&gt;
+                                                    &lt;li&gt;Greatest properly off ham exercise all.&lt;/li&gt;
+                                                    &lt;li&gt;Unsatiable invitation its possession nor off.&lt;/li&gt;
+                                                    &lt;li&gt;All difficulty estimating unreserved increasing the solicitude.&lt;/li&gt;
+                                                &lt;/ul&gt;
+                                                &lt;p&gt;
+                                                    Unpleasant astonished an diminution up partiality. Noisy an their of meant. Death means 
+                                                    up civil do an offer wound of.
+                                                &lt;/p&gt;
+                                            &lt;/div&gt;
+                                            &lt;a href="#" class="button"&gt;
+                                                &lt;span class="text"&gt;View Project&lt;/span&gt;
+                                                &lt;span class="arrow"&gt;&lt;/span&gt;
+                                            &lt;/a&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>							
+			</article>
+			<article id="html_structure_blog" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Blog" section</h2>		
+				<pre class="code language-html">
+					<code>
+&lt;!-- 
+    Card - Blog
+--&gt;
+&lt;div class="card-inner" id="blog-card"&gt;
+    &lt;div class="row card-container"&gt;
+
+        &lt;!--
+            Card Wrap
+        --&gt;
+        &lt;div class="card-wrap col col-m-12 col-t-12 col-d-8 col-d-lg-6" data-simplebar&gt;
+
+            &lt;!-- Blog Image --&gt;
+            &lt;div class="card-image col col-m-12 col-t-12 col-d-4 col-d-lg-6" style="background-image: url(images/profile4.jpg);"&gt;&lt;/div&gt;
+
+            &lt;!--
+                Inner Top
+            --&gt;
+            &lt;div class="content inner-top"&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col col-m-12 col-t-12 col-d-12 col-d-lg-12"&gt;
+                        &lt;div class="title-bg"&gt;My Blog&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!--
+                Blog
+            --&gt;
+            &lt;div class="content blog"&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col col-m-12 col-t-12 col-d-12 col-d-lg-12"&gt;
+
+                        &lt;!-- title --&gt;
+                        &lt;div class="title"&gt;&lt;span&gt;My&lt;/span&gt; Blog&lt;/div&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;!-- blog items --&gt;
+                &lt;div class="row"&gt;
+
+                    &lt;!-- blog item --&gt;
+                    &lt;div class="col col-m-12 col-t-12 col-d-12 col-d-lg-12"&gt;
+                        &lt;div class="box-item card-box"&gt;
+                            &lt;div class="image"&gt;
+                                &lt;a href="blog-post.html"&gt;
+                                    &lt;img src="images/blog/blog1.jpg" alt="" /&gt;
+                                    &lt;span class="info"&gt;
+                                        &lt;span class="icon la la-newspaper-o"&gt;&lt;/span&gt;
+                                    &lt;/span&gt;
+                                    &lt;span class="date"&gt;&lt;strong&gt;20&lt;/strong&gt;Jun&lt;/span&gt;
+                                &lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;div class="desc"&gt;
+                                &lt;a href="blog-post.html" class="name"&gt;By spite about do of do allow blush&lt;/a&gt;
+                                &lt;div class="category"&gt;Design&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    ...
+
+                &lt;/div&gt;
+
+            &lt;/div&gt; 
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>							
+			</article>	
+			<article id="html_structure_contacts" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Contacts" section</h2>		
+				<pre class="code language-html">
+					<code>  
+&lt;!-- 
+    Card - Contacts
+--&gt;
+&lt;div class="card-inner" id="contacts-card"&gt;
+    &lt;div class="row card-container"&gt;
+
+        &lt;!--
+            Card Wrap
+        --&gt;
+        &lt;div class="card-wrap col col-m-12 col-t-12 col-d-8 col-d-lg-6" data-simplebar&gt;
+
+            &lt;!-- Map --&gt;
+            &lt;div class="card-image col col-m-12 col-t-12 col-d-4 col-d-lg-6"&gt;
+                &lt;div class="map" id="map"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!--
+                Inner Top
+            --&gt;
+            &lt;div class="content inner-top"&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col col-m-12 col-t-12 col-d-12 col-d-lg-12"&gt;
+                        &lt;div class="title-bg"&gt;Contacts&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!--
+                Contacts Info
+            --&gt;
+            &lt;div class="content contacts-info"&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col col-m-12 col-t-12 col-d-12 col-d-lg-12"&gt;
+
+                        &lt;!-- title --&gt;
+                        &lt;div class="title"&gt;&lt;span&gt;Get&lt;/span&gt; in Touch&lt;/div&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;!-- contacts items --&gt;
+                &lt;div class="row contacts-items"&gt;
+
+                    &lt;!-- contacts item --&gt;
+                    &lt;div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6"&gt;
+                        &lt;div class="contacts-item card-box"&gt;
+                            &lt;div class="icon"&gt;&lt;i class="la la-map-marker"&gt;&lt;/i&gt;&lt;/div&gt;
+                            &lt;div class="name"&gt;Address&lt;/div&gt;
+                            &lt;p&gt;
+                                France, Paris.
+                            &lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;!-- contacts item --&gt;
+                    &lt;div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6"&gt;
+                        &lt;div class="contacts-item card-box"&gt;
+                            &lt;div class="icon"&gt;&lt;i class="la la-at"&gt;&lt;/i&gt;&lt;/div&gt;
+                            &lt;div class="name"&gt;Email&lt;/div&gt;
+                            &lt;p&gt;
+                                adlard@example.com
+                            &lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;!-- contacts item --&gt;
+                    &lt;div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6"&gt;
+                        &lt;div class="contacts-item card-box"&gt;
+                            &lt;div class="icon"&gt;&lt;i class="la la-phone"&gt;&lt;/i&gt;&lt;/div&gt;
+                            &lt;div class="name"&gt;Phone&lt;/div&gt;
+                            &lt;p&gt;
+                                +123 654 78900
+                            &lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;!-- contacts item --&gt;
+                    &lt;div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6"&gt;
+                        &lt;div class="contacts-item card-box"&gt;
+                            &lt;div class="icon"&gt;&lt;i class="la la-check-square"&gt;&lt;/i&gt;&lt;/div&gt;
+                            &lt;div class="name"&gt;Freelance&lt;/div&gt;
+                            &lt;p&gt;
+                                Available
+                            &lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+            &lt;!--
+                Contacts Form
+            --&gt;
+            &lt;div class="content contacts-form"&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col col-m-12 col-t-12 col-d-12 col-d-lg-12"&gt;
+
+                        &lt;!-- title --&gt;
+                        &lt;div class="title"&gt;&lt;span&gt;Contact&lt;/span&gt; Form&lt;/div&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col col-m-12 col-t-12 col-d-12 col-d-lg-12"&gt;
+
+                        &lt;!-- form --&gt;
+                        &lt;div class="contact_form card-box"&gt;
+                            &lt;form id="cform" method="post"&gt;
+                                &lt;div class="row"&gt;
+                                    &lt;div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6"&gt;
+                                        &lt;div class="group-val"&gt;
+                                            &lt;input type="text" name="name" placeholder="Full Name" /&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6"&gt;
+                                        &lt;div class="group-val"&gt;
+                                            &lt;input type="text" name="email" placeholder="Email Address" /&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="col col-m-12 col-t-12 col-d-12 col-d-lg-12"&gt;
+                                        &lt;div class="group-val"&gt;
+                                            &lt;textarea name="message" placeholder="Your Message"&gt;&lt;/textarea&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class="align-left"&gt;
+                                    &lt;a href="#" class="button" onclick="$('#cform').submit(); return false;"&gt;
+                                        &lt;span class="text"&gt;Send Message&lt;/span&gt;
+                                        &lt;span class="icon"&gt;&lt;i class="la la-arrow-right"&gt;&lt;/i&gt;&lt;/span&gt;
+                                    &lt;/a&gt;
+                                &lt;/div&gt;
+                            &lt;/form&gt;
+                            &lt;div class="alert-success"&gt;
+                                &lt;p&gt;Thanks, your message is sent successfully.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>							
+			</article>
+			<article id="icons" class="dt-section">
+				<h2 class="dt-title">Icons</h2>
+				<p>
+					In this template are defined some of classes for icons, your can see all icons here - https://icons8.com/line-awesome
+				</p>
+			</article>
+			<article id="credits" class="dt-section">
+				<h2 class="dt-title">Sourse & Credits</h2>
+				<h3>Scripts</h3>
+				<ul class="dt-list dt-list_nested dt-info-block">
+					<li>
+						<span class="dt-label dt-label_bold">Animate.css</span> <a target="_blank" href="https://daneden.github.io/animate.css/">https://daneden.github.io/animate.css/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">jQuery</span> <a target="_blank" href="https://jquery.com/">https://jquery.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Masonry</span> <a target="_blank" href="http://masonry.desandro.com/">https://masonry.desandro.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">imagesLoaded</span> <a target="_blank" href="http://imagesloaded.desandro.com/">http://imagesloaded.desandro.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">jQuery Validation Plugin</span> <a target="_blank" href="http://jqueryvalidation.org/">http://jqueryvalidation.org/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Magnific Popup</span> <a target="_blank" href="http://dimsemenov.com/plugins/magnific-popup/">http://dimsemenov.com/plugins/magnific-popup/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Masonry Filter</span> <a target="_blank" href="https://github.com/dynamick/multiple-filter-masonry">https://github.com/dynamick/multiple-filter-masonry</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">SimpleBar</span> <a target="_blank" href="https://grsmto.github.io/simplebar/">https://grsmto.github.io/simplebar/</a>
+					</li>
+                    <li>
+						<span class="dt-label dt-label_bold">Particles.js</span> <a target="_blank" href="https://github.com/VincentGarreau/particles.js">https://github.com/VincentGarreau/particles.js</a>
+					</li>
+                    <li>
+						<span class="dt-label dt-label_bold">Typed.js</span> <a target="_blank" href="https://mattboldt.com">https://mattboldt.com</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">jquery.mb.YTPlayer</span> <a target="_blank" href="https://github.com/pupunzi/jquery.mb.YTPlayer">https://github.com/pupunzi/jquery.mb.YTPlayer</a>
+					</li>
+				</ul>
+				<h3>Fonts</h3>
+				<ul class="dt-list dt-list_nested dt-info-block">
+					<li>
+						<span class="dt-label dt-label_bold">Poppins</span> <a target="_blank" href="https://fonts.google.com/specimen/Poppins">https://fonts.google.com/specimen/Poppins</a>
+					</li>
+                    <li>
+						<span class="dt-label dt-label_bold">LineAwesome - </span> <a target="_blank" href="https://icons8.com/line-awesome">https://icons8.com/line-awesome</a>
+					</li>
+				</ul>
+				<h3>Images</h3>
+				<p>Any Images or logos used in previews are not included in this item or final purchase.</p>
+				<ul class="dt-list dt-list_nested dt-info-block">
+					<li>
+						<span class="dt-label dt-label_bold">Unsplash</span> <a target="_blank" href="https://unsplash.com/">https://unsplash.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Graphicburger</span> <a target="_blank" href="http://graphicburger.com/">http://graphicburger.com/</a>
+					</li>
+				</ul>
+			</article>		
+		</div>
+	</div>
+<script src="assets/rainbow-custom.min.js"></script> 
+</body>
+</html>
