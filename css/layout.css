@@ -407,7 +407,8 @@
 
 .card-inner.card-started .title span {
 	padding-right: 15px;
-	opacity: 0.5;
+	/* opacity: 0.5; */
+	color: #ee534f;
 }
 
 .card-inner.card-started .subtitle {
@@ -415,6 +416,7 @@
 	font-size: 20px;
 	line-height: 20px;
 	font-weight: 200;
+	color: #ee534f;
 }
 
 .card-inner.card-started .subtitle p {
